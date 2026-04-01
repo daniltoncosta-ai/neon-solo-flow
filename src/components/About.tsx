@@ -1,5 +1,11 @@
+import aboutImg from "@/assets/about-logistics.jpg";
+
 const About = () => (
-  <section className="relative py-24 grain-overlay">
+  <section className="relative py-24 grain-overlay overflow-hidden">
+    {/* Background image */}
+    <img src={aboutImg} alt="Coletores de dados em operação logística" loading="lazy" width={1920} height={1080} className="absolute inset-0 w-full h-full object-cover" />
+    <div className="absolute inset-0 bg-background/85" />
+
     <div className="container mx-auto px-4 max-w-4xl text-center relative z-10">
       <p className="text-primary font-display text-xs tracking-[0.3em] uppercase mb-4">Quem Somos</p>
       <h2 className="text-3xl sm:text-4xl font-display font-bold mb-6 text-glow-purple">

@@ -1,7 +1,16 @@
 import { Button } from "@/components/ui/button";
+import { MessageCircle } from "lucide-react";
+import heroImg from "@/assets/hero-warehouse.jpg";
+
+const WHATSAPP_URL = "https://wa.me/5542999359438?text=Olá! Gostaria de conversar sobre soluções logísticas.";
 
 const Hero = () => (
-  <section id="inicio" className="relative min-h-screen flex items-center justify-center grain-overlay grid-bg overflow-hidden">
+  <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    {/* Background image */}
+    <img src={heroImg} alt="Armazém logístico com tecnologia" width={1920} height={1080} className="absolute inset-0 w-full h-full object-cover" />
+    <div className="absolute inset-0 bg-background/80" />
+    <div className="absolute inset-0 grain-overlay grid-bg" />
+
     {/* Gradient orbs */}
     <div className="absolute top-1/4 -left-32 w-96 h-96 rounded-full bg-neon-cyan/5 blur-[120px] animate-pulse-glow" />
     <div className="absolute bottom-1/4 -right-32 w-96 h-96 rounded-full bg-neon-purple/5 blur-[120px] animate-pulse-glow" style={{ animationDelay: "1s" }} />
@@ -20,11 +29,14 @@ const Hero = () => (
       </p>
 
       <div className="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-        <Button variant="neon" size="lg">
-          Falar com um Especialista
-        </Button>
-        <Button variant="neon-outline" size="lg">
-          Saiba Mais
+        <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+          <Button variant="neon" size="lg" className="gap-3">
+            <MessageCircle size={20} />
+            Falar com um Especialista
+          </Button>
+        </a>
+        <Button variant="neon-outline" size="lg" asChild>
+          <a href="#servicos">Saiba Mais</a>
         </Button>
       </div>
     </div>
