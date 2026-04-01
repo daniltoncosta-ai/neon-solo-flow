@@ -83,11 +83,11 @@
   }
 
   .box-glow-cyan {
-    box-shadow: 0 0 15px hsl(180 100% 50% / 0.3), 0 0 45px hsl(180 100% 50% / 0.1);
+    box-shadow: 0 0 15px hsl(152 70% 45% / 0.3), 0 0 45px hsl(152 70% 45% / 0.1);
   }
 
   .box-glow-purple {
-    box-shadow: 0 0 15px hsl(275 100% 57% / 0.3), 0 0 45px hsl(275 100% 57% / 0.1);
+    box-shadow: 0 0 15px hsl(160 55% 35% / 0.3), 0 0 45px hsl(160 55% 35% / 0.1);
   }
 
   .glass {
