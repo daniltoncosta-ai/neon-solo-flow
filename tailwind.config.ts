@@ -89,8 +89,8 @@ export default {
           "50%": { transform: "translateY(-10px)" },
         },
         "glow-border": {
-          "0%, 100%": { borderColor: "hsl(180 100% 50% / 0.3)" },
-          "50%": { borderColor: "hsl(275 100% 57% / 0.5)" },
+          "0%, 100%": { borderColor: "hsl(152 70% 45% / 0.3)" },
+          "50%": { borderColor: "hsl(160 55% 35% / 0.5)" },
         },
         "pulse-glow": {
           "0%, 100%": { opacity: "0.4" },
