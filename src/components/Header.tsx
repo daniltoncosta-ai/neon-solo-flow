@@ -30,9 +30,6 @@ const Header = () => {
               {l.label}
             </a>
           ))}
-          <Button variant="neon" size="sm">
-            Otimizar Operação
-          </Button>
         </nav>
 
         {/* Mobile toggle */}
@@ -54,9 +51,6 @@ const Header = () => {
               {l.label}
             </a>
           ))}
-          <Button variant="neon" size="sm" className="w-fit">
-            Otimizar Operação
-          </Button>
         </nav>
       )}
     </header>
